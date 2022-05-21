@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <style>
+        body{
+            margin:0px;
+            }
+
+        * {
+            font-family: Arial;
+            user-select:none;
+            outline:none;
+        }
+
+        .font_l {
+		    font-size:27px;
+	    }
+
+        .font_ml {
+            font-size:16px;
+        }
+
+        .font_m {
+            font-size:14px;
+        }
+
+        .font_s {
+            font-size:12px;
+        }
+
+        .font_xs {
+            font-size:10px;
+        }
+
+        .font_bold{
+		    font-weight:600;
+	    }
+        
+        .flex{
+		display:flex;
+	    }
+        
+        .flex-container {
+            display:flex;
+            justify-content:center /* flex-start, center, flex-end, space-around, space-evenly, space-between */
+        }
+        
+        .p-relative {
+            position:relative;
+        }
+
+        .p-absoulte {
+            position:absolute;
+        }
+        .flexCenter{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+	    }
+        .f1{
+            flex:1;
+         }
+         
+        .flex{
+		    display:flex;
+        }
+
+        .fdr {
+            flex-direction:row;
+        }
+
+        .fdc {
+            flex-direction:column;
+        }
+
+         .lodging {
+            font-size: 14px;
+            font-weight: 400;
+            line-height:18px;
+            border-radius:10px;
+        }
+    
+        .search-box {
+            width:250px; height:40px; border:1px solid gray; border-radius:60px; 
+        }
+        .search-box:hover {
+            box-shadow: 10px 10px 10px rgba(136, 136, 136, 0.7);
+        }
+
+         .search{
+            background:#FF385C;
+            height:30px;
+            width:30px;
+            border-radius:50%;
+            margin-top:7px;
+	    }
+
+         .card {
+            margin-left:5px;
+            margin-right:5px;
+            height:30vw;
+            overflow:hidden;
+	    }
+
+         .local {
+            border-radius: 3px;
+            width:60px;
+            height:60px;
+        }
+
+        .travel {
+            border-radius:10px;
+            width:95%;
+            height:90%;
+        }
+
+    </style>
+</head>
+<body>
+    <br>
+    <div class="flex-container">
+        <div class="search-box flex-container p-relative">
+            <div><input type="text" calss="font_l" style="border-style:none; margin-top:11px;font-weight:bold;" value="검색 시작하기" ></div>
+            <div class="search" style="padding-left: 0px;"><a style="margin:10px; font-size:30px; color:white;">⌕​</a></div>
+        </div>
+    </div>
+
+    <br>
+    <div class="font_bold p-relative flex-container">
+        <img class="card p-relative f1" style="min-width:100%; height:700px; object-fit:cover; overflow:hidden"
+        src= "https://a0.muscache.com/im/pictures/de34af12-d42b-4857-9ec4-65d240db6fc2.jpg?im_w=1200">
+        <div style="color:white; font-size:250%; position:absolute; bottom:300px; left:150px;">이제, 여행은 가까운<br>곳에서</div>
+        <button class="lodging font_xs p-absoulte" style="bottom:250px; left:150px;">근처의 숙소 둘러보기</button>
+    </div>
+
+    <br><br>
+    <div class="flex-container" style="justify-content:space-around; margin-right:100px;">
+        <div  class="flex" style="flex-wrap:wrap;">
+            <img class="imgs local" src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px; ">
+                <span class="font_bold">부산</span>
+                <span>차로 5시간 거리</span>
+            </div>
+        </div>
+        <div class="flex" style="flex-wrap:wrap;">
+            <img class= "imgs local" src="https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px;">
+                <span class="font_bold">양양군</span>
+                <span>차로 2.5시간 거리</span>
+            </div>
+        </div>
+        <div class="flex" style="flex-wrap: wrap;">
+            <img class= "imgs local" src="https://a0.muscache.com/im/pictures/52e8083e-2de2-446d-a860-534eab250541.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px;">
+                <span class="font_bold">속초시</span>
+                <span>차로 2.5시간 거리</span>
+            </div>
+        </div>
+        <div class="flex" style="flex-wrap: wrap;">
+            <img class= "imgs local" src="https://a0.muscache.com/im/pictures/20e74de0-0eb8-4fca-afb8-b111875acdf5.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px;">
+                <span class="font_bold">전주시</span>
+                <span>차로 3시간 거리</span>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="flex-container" style="justify-content:space-around; margin-right:100px;">
+        <div class="flex" >
+            <img class= "imgs local" src="https://a0.muscache.com/im/pictures/e639b7ab-aee3-48ee-9743-216684a51319.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px;">
+                <span class="font_bold">완주군</span>
+                <span>차로 3시간 거리</span>
+            </div>
+        </div>
+        <div class="flex">
+            <img class= "imgs local" src="https://a0.muscache.com/im/pictures/ca3737ef-0faf-46ba-b055-b4a2d99e2cea.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px;">
+                <span class="font_bold">강릉시</span>
+                <span>차로 3시간 거리</span>
+            </div>
+        </div>
+        <div class="flex">
+            <img class= "imgs local" src="https://a0.muscache.com/im/pictures/585d1e53-e2e1-4baf-a34e-36301dd1e2da.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px;">
+                <span class="font_bold">경주시</span> 
+                <span>차로 4.5시간 거리</span>
+            </div>
+        </div>
+        <div class="flex">
+            <img class= "imgs local" src="https://a0.muscache.com/im/pictures/7c309a70-bc93-4603-8d3b-9d4cd9bf75b2.jpg?im_q=medq&im_w=720">
+            <div class="font_ml flex fdc" style="margin-left:20px;">
+                <span class="font_bold">고성군</span>
+                <span>차로 3시간 거리</span>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="flex fdc">
+        <span class="font_l" style="font-weight:700; line-height:36px; padding-left: 120px;">어디에서나, 여행은 살아보는 거야!</span>
+    </div>
+    <br>
+
+    <div class="flex-container" style="margin-left:100px; margin-right:100px"> 
+        <div class="flex"> 
+            <div class="flex fdc">
+                <img class="travel" style="object-fit:fill;"
+                src="https://a0.muscache.com/im/pictures/a0316ecb-e49b-4b3a-b6b6-c2876b820e8c.jpg?im_w=720">
+                <span class="font_ml font_bold">집 전체</span>
+            </div>
+            
+            <div class="flex fdc">
+                <img class="travel" style="object-fit:fill;"
+                src="https://a0.muscache.com/im/pictures/ff69ac49-64e7-4f4a-ae2b-ee01163d0790.jpg?im_w=720">
+                <span class="font_ml font_bold">통나무집 및 전원주택</span>
+            </div>
+            <div class="flex fdc">
+                <img class="travel"
+                src="https://a0.muscache.com/im/pictures/ce6814ba-ed53-4d6e-b8f8-c0bbcf821011.jpg?im_w=720">
+                <span class="font_ml font_bold">독특한 공간</span>
+            </div>
+            <div class="flex fdc">
+                <img class="travel" style="object-fit:fill;"
+                src="https://a0.muscache.com/im/pictures/fbe849a4-841a-41b3-b770-419402a6316f.jpg?im_w=720">
+                <span class="font_ml font_bold">반려동물</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
